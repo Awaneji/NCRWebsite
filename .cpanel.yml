@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/northcoa/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    # - /bin/cp -R audio $DEPLOYPATH
+    # - /bin/cp -R captcha $DEPLOYPATH
+    # - /bin/cp -R css $DEPLOYPATH
+    # - /bin/cp -R fonts $DEPLOYPATH
+    # - /bin/cp -R js $DEPLOYPATH
+    # - /bin/cp -R images $DEPLOYPATH
+
+  exclude-patterns:
+    - "**/.git/"
